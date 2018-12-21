@@ -1,5 +1,8 @@
 # 组队小管家
 帮助有组队需求却找不到有相应技能的队友的小伙伴
+
+
+**演示视频**：https://6131-a17766476112-b1d334-1257968635.tcb.qcloud.la/演示视频/组队小助手.mp4?sign=242ae90ceed46d03479ad0a4c4c0dfc6&t=1545397152
 ## 开发模式：小程序云开发
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181221203852949.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzQ2MTIy,size_16,color_FFFFFF,t_70)云开发使得开发更为简单，不用买服务器。
