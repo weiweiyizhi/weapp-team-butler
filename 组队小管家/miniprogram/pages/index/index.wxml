@@ -1,0 +1,122 @@
+<!--index.wxml-->
+
+
+  <view class='search'>
+        <view class='searchItem'>
+            <image hidden='{{!hiddenSearch}}' src='../../images/search.png' />
+            <image bindtap='back' hidden='{{hiddenSearch}}' src='../../images/minus.png' />
+            <input confirm-type="searh" placeholder='search by team name' bindinput='oninput'></input>
+        </view>
+
+      
+
+    </view>
+
+
+
+ <swiper autoplay="True" class="wx-swiper" indicator-dots="True"  interval="2000"> 
+ <view wx:for='{{ad}}' wx:key='{{index}}' class='poster'>
+ <navigator  url='../ad/ad?id={{index}}'>
+    <swiper-item> 
+      <image class="wx-image" mode="aspectFill"src="{{ad[index]}}"/> 
+    </swiper-item> 
+</navigator>
+ </view>
+ 
+  </swiper>
+
+
+
+
+<scroll-view>
+
+<view class='item' wx:for="{{datas}}" wx:key='index'>
+<navigator wx:if='{{index%2}}' url='../competitionInf/competitionInf?id={{item._id}}'>
+
+
+<view class='slogan'>
+<view class='longSlogan a'><text>{{item.competitionName}}</text></view>
+<view class='shortSlogan a'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan a'><text>{{item.slogan}}</text></view>
+</view>
+<image src='{{item.avatarUrl}}'></image>
+</navigator>
+
+<navigator wx:else url='../competitionInf/competitionInf?id={{item._id}}'>
+
+<image src='{{item.avatarUrl}}'></image>
+<view class='slogan'>
+<view class='longSlogan'><text>{{item.competitionName}}</text></view>
+<view class='shortSlogan'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan'><text>{{item.slogan}}</text></view>
+</view>
+</navigator>
+</view>
+<view class='blank'></view>
+</scroll-view>
+
+
+
+<view class="bar" >
+  <view  class='choose'>
+         <navigator hover-class="none"  url='../join/join'>      
+            <image src='../../images/join.png' />
+        </navigator>
+  </view>      
+
+  <view  class='choose'>      
+         <navigator hover-class="none" url='../message/message'>    
+            <image src='../../images/message.png' />
+        </navigator>
+  </view>  
+
+ <view  class='choose'>        
+         <navigator hover-class="none" url='../issue/issue'>
+            <image src='../../images/issue.png' /> 
+        </navigator>
+  </view>  
+
+ <view  class='choose'>        
+         <navigator  hover-class="none"url='../collect/collect'>    
+            <image src='../../images/collect.png' />       
+        </navigator>
+  </view>  
+
+ <view  class='choose'>        
+         <navigator  hover-class="none" url='../me/me'>    
+            <image src='../../images/me.png' />
+        </navigator>
+  </view>  
+</view>
+
+
+<view class='white' hidden='{{hiddenSearch}}'>
+<scroll-view>
+<view class='item' wx:for="{{search}}" wx:key='index'>
+<navigator wx:if='{{index%2}}' url='../competitionInf/competitionInf?id={{item._id}}'>
+<view class='slogan'>
+<view class='longSlogan a'><text>{{item.teamName}}</text></view>
+<view class='shortSlogan a'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan a'><text>{{item.slogan}}</text></view>
+</view>
+<image src='{{item.avatarUrl}}'></image>
+</navigator>
+
+<navigator wx:else url='../competitionInf/competitionInf?id={{item._id}}'>
+
+<image src='{{item.avatarUrl}}'></image>
+<view class='slogan'>
+<view class='longSlogan'><text>{{item.teamName}}</text></view>
+<view class='shortSlogan'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan'><text>{{item.slogan}}</text></view>
+</view>
+</navigator>
+</view>
+</scroll-view>
+</view>
+         
+
+
+
+
+

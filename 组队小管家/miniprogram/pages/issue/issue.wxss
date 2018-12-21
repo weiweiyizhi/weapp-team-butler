@@ -1,0 +1,137 @@
+page{
+  height:100%;
+  text-align: center;
+}
+
+view.row {
+    display: flex;
+    flex-direction: row;
+    height: 6%;
+    width: 80%;
+    background: #efeff4;
+    align-items: center;
+    background-color: rgb(0,75,141);
+    border-radius: 40rpx;
+    margin: 0 auto 0 auto;
+   
+}
+  view.inputItem {
+    display: flex;
+    height: 94%;
+    width: 96%;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 40rpx;
+    margin: auto 12rpx auto 12rpx;
+    overflow: scroll;
+} 
+view.row input{
+  font-size: 30;
+  width: 95%;
+  height: 80%;
+  margin:auto 0 auto 20rpx;
+}
+ view.add {
+    display: flex;
+    height: 94%;
+    width: 84%;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 40rpx;
+    margin: auto 0 auto 12rpx;
+} 
+ view.row image{
+    
+    height:50rpx;
+    width: 50rpx;
+    
+    margin: auto 0 auto 10rpx;
+} 
+ view.addd image{
+    
+    height:75rpx;
+    width: 75rpx;
+    
+    margin: auto 0 auto 0;
+} 
+
+view.blank{
+  height: 3%;
+  width: 60%;
+  background-color: rgb(255,255,255);
+  border-right: 2px solid rgb(0,75,141);
+  border-left: 2px solid rgb(0,75,141);
+  margin: 0 auto 0 auto;
+}
+view.blank1{
+  height: 6%;
+  background-color: rgb(255,255,255);
+}
+.blank2{
+  height: 120rpx;
+}
+
+
+
+view.row1 {
+    display: flex;
+    flex-direction: row;
+    height: 16%;
+    width: 80%;
+    background: #efeff4;
+    align-items: center;
+    background-color: rgb(0,75,141);
+    border-radius: 40rpx;
+    margin: 0 auto 0 auto;
+   
+}
+view.row2 {
+    display: flex;
+    flex-direction: row;
+    height: 26%;
+    width: 80%;
+    background: #efeff4;
+    align-items: center;
+    background-color: rgb(0,75,141);
+    border-radius: 40rpx;
+    margin: 0 auto 0 auto;
+   
+}
+view.row textarea{
+  font-size: 30;
+  width: 95%;
+  height: 90%;
+  text-align: left;
+  margin:auto 0 auto 20rpx;
+}
+
+view.sub{
+  z-index: 10;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(240, 225, 225);
+  background-color: white;
+}
+view.sub image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: auto 50rpx auto 50rpx;
+}
+view.buttonItem{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  width: 450rpx;
+  height: 100%;
+}
+view.sub button{
+  margin: 20% 10% 20% 10%;
+  border-radius: 20rpx;
+}
+
+
+

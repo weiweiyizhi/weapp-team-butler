@@ -1,0 +1,83 @@
+page{
+  height:100%;
+   display: flex;
+  flex-direction: column;
+  
+}
+.top{
+  height: 180rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 10rpx;
+}
+.tx{
+  height: 100%;
+  width: 20%;
+  
+}
+.url{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30rpx 25rpx 30rpx 25rpx;
+}
+.name{
+  height: 100%;
+  width: 60%;
+  text-align: center;
+
+  line-height: 180rpx;
+  
+}
+.top text{
+  font-size: 50;
+  color: rgb(0,75,141);
+}
+.row1 text{
+  font-size: 50;
+  color: white;
+}
+.row2 text{
+  font-size: 50;
+  color: rgb(0,75,141);
+}
+
+.sex{
+  height: 100%;
+  width: 20%;
+  justify-content: center;
+  
+}
+.sex1{
+  height: 50rpx;
+  width: 50rpx;
+ margin: 65rpx 40rpx 65rpx 40rpx;
+}
+
+.row{
+  height: 140rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1rpx rgba(57, 138, 138, 0.829)solid;
+  margin-bottom: 20rpx;
+}
+.row1{
+  height: 100%;
+  width: 20%;
+  background-color:rgb(0,75,141);
+  text-align: center;
+  line-height: 140rpx;
+}
+.row2{
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  line-height: 140rpx;
+}
+
+

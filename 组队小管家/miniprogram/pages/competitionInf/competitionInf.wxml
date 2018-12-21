@@ -1,0 +1,175 @@
+<scroll-view>
+<view class='datas'> 
+<view class='top'> 
+  <navigator hover-class="none" class='tx' url='../otherInf/otherInf?id={{datas._openid}}'> 
+   <image src='{{datas.avatarUrl}}' class='url'></image> 
+  </navigator> 
+  <view class='txt'> 
+  <view class='teamName'> 
+  <text>{{datas.teamName}}</text> 
+  </view> 
+  <view class='slogan'> 
+  <text>{{datas.slogan}}</text> 
+  </view> 
+  </view> 
+</view> 
+ 
+<view class='slogan1'> 
+<view class='longSlogan'><text>{{datas.recruitType}}</text></view> 
+<view class='shortSlogan'><text>{{datas.competitionName}}</text></view> 
+<view class='longSlogan1'><text>{{datas.detail}}</text></view> 
+</view> 
+ 
+ 
+<view class='join'> 
+
+<view wx:if='{{member.length==1}}'>
+<view class='join2'> 
+<view wx:for='{{member}}' wx:key="{{index}}" class='comItem1'>
+<view class='thirdRow'> 
+<navigator hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+</view>
+</view> 
+
+<view wx:elif='{{member.length==2}}'>
+<view class='join2'> 
+<view wx:for='{{member}}' wx:key="{{index}}" class='comItem1'>
+<view class='secendRow'> 
+<navigator hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator> 
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+</view>
+</view> 
+
+<view wx:elif='{{member.length==3}}'>
+<view class='join2'> 
+<view wx:for='{{member}}' wx:key="{{index}}" class='comItem1'>
+<view class='firstRow'> 
+<navigator hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+</view>
+</view> 
+
+
+<view wx:elif='{{member.length==4}}'>
+<view class='join1'> 
+<view wx:for='{{member}}' wx:key="{{index}}"  class='comItem1'>
+<view wx:if='{{index<2}}'>
+<view class='secendRow'> 
+<navigator  hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+ </view>
+</view>
+
+<view class='join1'> 
+<view wx:for='{{member}}' wx:key="{{index}}"  class='comItem1'>
+<view wx:if='{{index>=2}}'>
+<view class='secendRow'> 
+<navigator hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+ </view>
+</view>
+
+</view> 
+
+
+
+<view wx:elif='{{member.length>=5}}'>
+<view class='join1'> 
+<view wx:for='{{member}}' wx:key="{{index}}"  class='comItem1'>
+<view wx:if='{{index<3}}'>
+<view class='firstRow'> 
+<navigator hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+ </view>
+</view>
+
+<view class='join1'> 
+<view wx:for='{{member}}' wx:key="{{index}}" class='comItem1'>
+<view wx:if="{{index>=3||index<=4}}">
+<view class='secendRow'> 
+<navigator  hover-class="none"url='../otherInf/otherInf?id={{item.openid}}'>
+<image src='{{item.avatar}}'></image> 
+</navigator>
+<text>{{item.username}}</text> 
+</view> 
+ </view> 
+ </view>
+</view>
+
+</view> 
+ 
+
+
+
+
+</view> 
+ 
+
+
+   
+      <view wx:for='{{comments}}' wx:key="{{index}}" class='comItem'>
+        <view class='userInfo'>
+          <navigator class='userAva' hover-class="none" url='../otherInf/otherInf?id={{item.openid}}'>
+            <image src='{{item.avatar}}' class='userImg'></image> 
+          </navigator>
+
+          <view class='infor'>
+          <view class='Name'>
+          <text>{{item.username }}</text>
+          </view>
+
+        <view class='time'>
+        <text>{{item.time}}</text>
+        </view>
+        </view>
+
+        </view>
+
+        <view class='comments'>
+        <text>{{item.comment}}</text>
+        </view>
+      
+   
+    
+</view>
+ 
+ </view> 
+ <view class='blank'></view>
+ 
+ </scroll-view>
+ <view class='sub'>    
+             <image src='{{collectIc}}' bindtap='onCollect'></image>   
+             <view class='buttonItem'>   
+            <button type='warn' size='mini' bindtap="onApply">Join</button> 
+            </view>  
+             <image src='../../images/write.png' bindtap='onInput'></image>  
+  </view>
+<view class='comment'  hidden='{{hiddeninput}}'>
+<input bindinput='inputHandler'></input>
+<text bindtap='onComment'>评论</text>
+</view>

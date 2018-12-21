@@ -1,0 +1,159 @@
+/**index.wxss**/
+
+page {
+  /*height: 250%;*/
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+view.search {
+    position:fixed;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    height: 80rpx;
+    width: 100%;
+    background: #efeff4;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 10rpx;
+   
+}
+  view.searchItem {
+    display: flex;
+    width: 700rpx;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 10rpx;
+    margin-right: 25rpx;
+    margin-left: 25rpx;
+}
+
+ view.searchItem input {
+    flex: 1;
+    font-size: 30rpx;
+}
+
+view.search image {
+    height: 48rpx;
+    width: 48rpx;
+    align-self: center;
+    margin-left: 10rpx;
+    margin-right: 20rpx;
+}
+
+
+.wx-swiper{
+  height: 500rpx;
+
+ }
+.wx-image{
+  width: 100%; 
+  height: 100%;
+   }
+
+.item{
+  height: 140rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 40rpx 0 0 0;
+  z-index: 5;
+}
+.item navigator{
+  height: 140rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item image{
+  width: 120rpx;
+  height: 120rpx;
+  margin:10rpx 10rpx 10rpx 10rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slogan{
+  height: 100%;
+  width: 610rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 30rpx;
+ 
+}
+.longSlogan{
+  height: 30rpx;
+  width: 550rpx;
+  border-radius: 20rpx;
+  background-color: rgb(0,75,141);
+  margin:12.5rpx 30rpx 0 30rpx;
+
+}
+.shortSlogan{
+  height: 30rpx;
+  width: 450rpx;
+  border-radius: 20rpx;
+  background-color:rgb(0,75,141);
+  margin:12.5rpx 80rpx 0 80rpx;
+
+}
+.a{
+  background-color:rgb(220, 228, 235);
+}
+.slogan text{
+  color: white;
+  
+}
+.a text{
+  color: rgb(0,75,141);
+}
+
+
+.blank{
+  height: 120rpx;
+}
+
+
+view.bar {
+    position:fixed;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:120rpx;
+
+    background-color:#faf9f4; 
+    border-top: 1px solid rgb(240, 225, 225);
+    z-index: 10;
+   
+}
+view.choose{
+  height:100%;
+  width: 20%; 
+
+}
+view.choose navigator{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+view.choose image {
+  margin: 25rpx 40rpx 25rpx 40rpx;
+  height: 70rpx;
+  width: 70rpx;
+  
+
+}
+view.white{
+  height: 1400rpx;
+  width: 750rpx;
+  background-color: white;
+  position: fixed;
+  top:80rpx;
+  z-index: 20;
+}
+

@@ -1,0 +1,26 @@
+<scroll-view>
+
+<view class='item' wx:for="{{datas}}" wx:key='index'>
+<navigator wx:if='{{index%2}}' url='../competitionInf/competitionInf?id={{item._id}}'>
+
+
+<view class='slogan'>
+<view class='longSlogan a'><text>{{item.teamName}}</text></view>
+<view class='shortSlogan a'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan a'><text>{{item.slogan}}</text></view>
+</view>
+<image src='{{item.avatarUrl}}'></image>
+</navigator>
+
+<navigator wx:else url='../competitionInf/competitionInf?id={{item._id}}'>
+
+<image src='{{item.avatarUrl}}'></image>
+<view class='slogan'>
+<view class='longSlogan'><text>{{item.teamName}}</text></view>
+<view class='shortSlogan'><text>{{item.recruitType}}</text></view>
+<view class='longSlogan'><text>{{item.slogan}}</text></view>
+</view>
+</navigator>
+</view>
+</scroll-view>
+

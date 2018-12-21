@@ -1,0 +1,4 @@
+<!--miniprogram/pages/ad/ad.wxml-->
+<view class='image'>
+<image class='a' src='{{ad[id]}}'></image>
+</view>

@@ -1,0 +1,3 @@
+<!--miniprogram/pages/message/message.wxml-->
+<image class='a' src='../../images/404.png'></image>
+<text class='b'>待开发</text>

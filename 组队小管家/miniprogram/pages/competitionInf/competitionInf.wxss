@@ -1,0 +1,277 @@
+page{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.datas{
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  height: 180rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-bottom: 10rpx;
+  border-top:3rpx solid rgb(220, 228, 235);
+  border-bottom: 3rpx solid rgb(220, 228, 235);
+}
+.tx{
+  height: 180rpx;
+  width: 180rpx;
+
+}
+.url{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+}
+.txt{
+  height: 180rpx;
+  width: 570rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+.teamName{
+  height:90rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  font-weight: 900;
+ 
+}
+.slogan{
+  line-height: 40rpx;
+  height:40rpx;
+  width: 100%;
+  text-align: center;
+  margin: 10rpx 0 25rpx 0;
+  font-weight: 100;
+
+}
+.teamName text{
+ 
+  color: rgb(0,75,141);
+}
+.slogan text{
+
+  color: rgb(189, 189, 196);
+}
+
+
+.slogan1{
+  height: 500rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 30rpx;
+}
+.longSlogan{
+  height: 30rpx;
+  width: 550rpx;
+  border-radius: 20rpx;
+  background-color: rgb(0,75,141);
+  margin:25rpx 100rpx 0 100rpx;
+}
+.longSlogan1{
+  height: 360rpx;
+  width: 650rpx;
+  border-radius: 20rpx;
+  background-color: rgb(0,75,141);
+  margin:25rpx 50rpx 0 50rpx;
+  line-height: 50rpx;
+}
+.shortSlogan{
+  height: 30rpx;
+  width: 450rpx;
+  border-radius: 20rpx;
+  background-color: rgb(220, 228, 235);
+  margin:25rpx 150rpx 0 150rpx;
+
+}
+.slogan1 text{
+  color: white;
+}
+.shortSlogan text{
+   color:rgb(0,75,141);
+}
+
+
+.join{
+  height: 360rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.join1{
+  height: 180rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-top:3rpx solid rgb(220, 228, 235);
+  border-bottom: 3rpx solid rgb(220, 228, 235);
+}
+.join2{
+  height: 180rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-top:3rpx solid rgb(220, 228, 235);
+  border-bottom: 3rpx solid rgb(220, 228, 235);
+  margin:90rpx 0 90rpx 0;
+}
+.firstRow{
+  height: 180rpx;
+  width: 250rpx;
+  border-right:3rpx solid rgb(220, 228, 235);
+  display: flex;
+  flex-direction: column;
+}
+.secendRow{
+  height: 180rpx;
+  width: 375rpx;
+  border-right:3rpx solid rgb(220, 228, 235);
+  display: flex;
+  flex-direction: column; 
+}
+.thirdRow{
+  height: 180rpx;
+  width: 250rpx;
+  border-right:3rpx solid rgb(220, 228, 235);
+  border-left:3rpx solid rgb(220, 228, 235);
+  display: flex;
+  flex-direction: column; 
+  margin: 0 250rpx 0 250rpx;
+}
+.join image{
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 15rpx auto 0 auto;
+}
+.join text{
+  color: rgb(0,75,141);
+  font-size: 0.8rem;
+}
+
+.comItem{
+  border-top:3rpx solid rgb(220, 228, 235);
+  border-bottom: 3rpx solid rgb(220, 228, 235);
+  height: 200rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx 0 0 0;
+}
+.userInfo{
+  height: 100rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+}
+.userAva{
+   height: 100rpx;
+   width: 150rpx;
+}
+.userAva image{
+  height: 80rpx;
+   width: 80rpx;
+   border-radius: 50%;
+   overflow: hidden;
+   margin:10rpx 0 10rpx 35rpx;
+}
+.infor{
+  height: 100rpx;
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+}
+.Name{
+   height: 50rpx;
+   width: 600rpx;
+   line-height: 50rpx
+}
+.time{
+   height: 50rpx;
+   width: 650rpx;
+   line-height: 50rpx;
+   font-size: 0.6rem;
+}
+.comments{
+  height: 100rpx;
+  width:750rpx;
+  overflow: hidden;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+
+}
+.blank{
+  height: 120rpx;
+  width:750rpx;
+}
+
+view.sub{
+  z-index: 10;
+  height: 120rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(240, 225, 225);
+  background-color: white;
+}
+view.sub image{
+  width: 120rpx;
+  height: 80rpx;
+  margin: auto 85rpx auto 85rpx;
+}
+view.buttonItem{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  width: 450rpx;
+  height: 100%;
+}
+view.sub button{
+  margin: 20% 10% 20% 10%;
+  border-radius: 20rpx;
+}
+.comment{
+  z-index: 20;
+  height: 120rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  line-height: 100%;
+}
+.comment input{
+  height: 80rpx;
+  width: 70%;
+  border-radius: 20rpx;
+  line-height: 80%;
+  background-color: rgb(220, 228, 235);
+  margin: 20rpx 60rpx 20rpx 40rpx;
+}
+.comment text{
+ line-height: 120rpx;
+ color: rgb(0,75,141);
+}

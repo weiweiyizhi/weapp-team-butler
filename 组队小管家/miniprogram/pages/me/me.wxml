@@ -1,0 +1,19 @@
+<!--miniprogram/pages/me/me.wxml-->
+
+<view class='top a' bindtap="myInf">
+        <image src='{{top}}' ></image>
+</view>
+
+
+<view class='bottom a' bindtap="onGetOpenid"> 
+         <image src='{{bottom}}'></image>
+</view>
+
+
+<view class='all'>
+  <view class='tx'>
+     <image src='{{avatarUrl}}'class="userTx"></image>
+  </view>
+</view>
+
+

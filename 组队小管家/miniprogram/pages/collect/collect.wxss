@@ -1,0 +1,58 @@
+
+.item{
+  height: 140rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  margin: 40rpx 0 0 0;
+  z-index: 5;
+}
+.item navigator{
+  height: 140rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item image{
+  width: 120rpx;
+  height: 120rpx;
+  margin:10rpx 10rpx 10rpx 10rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slogan{
+  height: 100%;
+  width: 610rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 30rpx;
+ 
+}
+.longSlogan{
+  height: 30rpx;
+  width: 550rpx;
+  border-radius: 20rpx;
+  background-color: rgb(0,75,141);
+  margin:12.5rpx 30rpx 0 30rpx;
+
+}
+.shortSlogan{
+  height: 30rpx;
+  width: 450rpx;
+  border-radius: 20rpx;
+  background-color:rgb(0,75,141);
+  margin:12.5rpx 80rpx 0 80rpx;
+
+}
+.a{
+  background-color:rgb(220, 228, 235);
+}
+.slogan text{
+  color: white;
+  
+}
+.a text{
+  color: rgb(0,75,141);
+}

@@ -1,0 +1,57 @@
+<!--miniprogram/pages/myInf/myInf.wxml-->
+<view class='top'>
+
+  <view class='tx'>
+   <image src='{{avatarUrl}}' class='url'></image>
+  </view>
+
+  <view class='name'>
+  <text>{{name}}</text>
+  </view>
+
+  <view class='sex'>
+  <image wx:if='{{sex==2}}' src='../../images/girl.png' class='sex1'></image>
+  <image wx:else src='../../images/boy.png' class='sex1'></image>
+  </view>
+
+</view>
+
+
+
+
+
+<view class='row'>
+  <view class='row1'>
+  <text>school</text>
+  </view>
+  <view class='row2'>
+   <input  placeholder-class="place" placeholder='{{school}}' bindinput="getSchool"></input>
+  </view>
+</view>
+
+
+
+
+
+<view class='row'>
+  <view class='row1'>
+  <text>major</text>
+  </view>
+  <view class='row2'>
+  <input  placeholder-class="place" placeholder='{{major}}' bindinput="getMajor"></input>
+  </view>
+</view>
+
+
+<view class='row'>
+  <view class='row1'>
+  <text>wechat</text>
+  </view>
+  <view class='row2'>
+  <input  placeholder-class="place" placeholder='{{wechat}}' bindinput="getWechat"></input>
+  </view>
+</view>
+
+
+
+

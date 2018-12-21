@@ -1,0 +1,24 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/first/first",
+    "pages/index/index",
+    "pages/join/join",
+    "pages/collect/collect",
+    "pages/issue/issue",
+    "pages/message/message",
+    "pages/me/me",
+    "pages/myInf/myInf",
+    "pages/competitionInf/competitionInf",
+    "pages/otherInf/otherInf",
+    "pages/ad/ad"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "组队小管家",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": -40
+  }
+}

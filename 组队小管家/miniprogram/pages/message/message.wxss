@@ -1,0 +1,14 @@
+/* miniprogram/pages/message/message.wxss */
+page{
+  height:100%;
+  text-align: center;
+}
+.a{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 100rpx 275rpx 0 275rpx;
+}
+.b{
+  align-items: center;
+  color: rgb(184, 179, 155);
+}

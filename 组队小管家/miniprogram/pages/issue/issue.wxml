@@ -1,0 +1,76 @@
+<!--miniprogram/pages/issue/issue.wxml-->
+
+ <view class='row'>
+        <view class='inputItem'>
+            <input confirm-type="next" placeholder-class="center" placeholder='Team Name' bindinput="getTea"></input>
+        </view>
+ </view>
+
+<view class='blank'></view>
+
+  <view class='row'>
+        <view class='inputItem'>
+            <input confirm-type="next" placeholder-class="center" placeholder='Competition Name' bindinput="getCom"></input>
+        </view>
+ </view>
+
+
+
+
+<view class='blank1'></view>
+
+
+
+  <view class='row'>
+        <view class='inputItem add'>
+            <input confirm-type="next" placeholder-class="center" placeholder='Recruit type' onchange="getRec"></input>            
+        </view>
+        <image src='../../images/add.png' bindtap='addList'></image>
+ </view>
+
+ <block wx:for="{{lists}}" wx:key='{{index}}'>
+
+<view class='blank'></view>
+
+<view class='row addd'>
+        <view class='inputItem add'>
+            <input confirm-type="next" placeholder-class="center" placeholder='Recruit type' onchange="getRec"></input>           
+        </view>
+         <image src='../../images/minus.png' bindtap='delList'></image>
+ </view>
+
+
+
+    </block> 
+
+
+
+
+
+
+
+ <view class='blank1'></view>
+
+
+
+
+  <view class='row row1'>
+        <view class='inputItem'>
+            <textarea  maxlength='0' confirm-type="next" placeholder-class="center1" placeholder='Slogan' bindinput="getSlo"></textarea> 
+        </view>
+ </view>
+<view class='blank'></view>
+  <view class='row row2'>
+        <view class='inputItem'>
+            <textarea  maxlength='0' confirm-type="next" placeholder-class="center1" placeholder='Detail' bindinput="getDet"></textarea> 
+        </view>
+ </view>
+<view class='blank2'></view>
+
+  <view class='sub'>   
+             <image src=''></image>  
+             <view class='buttonItem'>  
+            <button type='warn' size='mini' bindtap="onAdd">submit</button>
+            </view> 
+             <image src=''></image> 
+  </view>

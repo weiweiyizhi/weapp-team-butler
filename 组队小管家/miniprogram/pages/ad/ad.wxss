@@ -1,0 +1,12 @@
+/* miniprogram/pages/ad/ad.wxss */
+page {
+  height: 100%;
+}
+view.image{
+  height: 100%;
+  width: 100%;
+}
+.image image{
+ height: 100%;
+  width: 100%;
+}
